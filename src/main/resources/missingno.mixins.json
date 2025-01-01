@@ -1,0 +1,10 @@
+{
+	"required": true,
+	"package": "tektonikal.missingno.mixin",
+	"mixins": [
+      "MissingSpriteMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
