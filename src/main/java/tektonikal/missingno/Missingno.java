@@ -12,6 +12,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import tektonikal.missingno.enterprise.impl.InitializationHandlerImpl;
 
 import java.io.File;
 import java.nio.file.Path;
@@ -27,6 +28,7 @@ public class Missingno implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		MidnightConfig.init("missingno", Config.class);
+		new InitializationHandlerImpl().handleInit();
 	}
 //	public static Block register(Block block, String name, boolean shouldRegisterItem) {
 //		Identifier id = Identifier.of("missingno", name);
